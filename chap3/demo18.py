@@ -1,0 +1,21 @@
+#开发者：罗地观生
+#开发时间：2021/4/19 13:48
+'''集合的创建，可变序列'''
+'''第一种创建方式,直接创建'''
+s={'saf','sdfhu','shgfish',112,45,65,'dsfgjs'}
+'''第二种，使用内置函数set'''
+s1=set(range(6))
+print(s1,type(s1))
+s2=set(['sh','dhfjdhg',12,45,45])#自动删除重复值
+print(s2,type(s2))
+s3=set(('sf','sfi',12,54,65,12))#自动删除重复值
+print(s3,type(s3))
+s4=set('python')#这种方式只允许存储一个元素
+print(s4,type(s4))
+s5=set({12,'gdfua',54,54})
+print(s5,type(s5))
+'''空集合创建方式'''
+s6=set()
+print(s6,type(s6))
+s7={}#空字典创建
+print(s7,type(s7))

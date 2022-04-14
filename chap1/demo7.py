@@ -1,0 +1,19 @@
+#开发者：罗地观生
+#开发时间：2021/4/17 14:54
+lst=[10,20,30,40]
+print('添加前的列表元素',lst,id(lst))
+lst.append(100)
+print('添加后的列表元素',lst,id(lst))
+lst2=['hello','world']
+lst.append(45)
+print(lst)
+lst.extend(lst2)
+lst.insert(2,98)
+print(lst)
+#lst.append(lst2)把整个列表作为一个元素添加到列表lst末尾
+#lst.extend(lst2)依次把列表lst2中的元素添加到列表lst中
+#lst.insert(1,90)在指定位置上添加元素
+lst3=[True,False,'hello']
+#切片操作，从指定位置添加N个元素
+lst[1:2:]=lst3#表示从1切到2，不包括2上的元素，全部替换为lst3上的元素
+print(lst)
